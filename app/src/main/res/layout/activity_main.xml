@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_example2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/RL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@color/lightgreen"
+        android:onClick="views">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Weeks Tasks"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout>
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/darkred"
+        android:onClick="views"
+        android:text="Week1"
+        android:textColor="@android:color/white"
+        app:button_duration="600"
+        app:button_scale="0.50" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/darkred"
+        android:onClick="views"
+        android:text="Week2"
+        android:textColor="@android:color/white"
+        app:button_duration="600"
+        app:button_scale="0.50" />
+
+    <com.skydoves.elasticviews.ElasticButton
+    android:id="@+id/btn3"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:background="@color/darkred"
+    android:onClick="views"
+    android:text="Week3"
+    android:textColor="@android:color/white"
+    app:button_duration="600"
+    app:button_scale="0.50" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/imv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:onClick="views"
+            android:src="@drawable/ic_question"
+            />
+
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/imv2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_add"
+            android:onClick="views"
+            app:fabutton_duration="400"
+            app:fabutton_scale="0.85" />
+    </RelativeLayout>
+
+</LinearLayout>
